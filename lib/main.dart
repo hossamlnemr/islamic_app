@@ -4,7 +4,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:islamic_app/home_page.dart';
+import 'package:islamic_app/pages/home_page.dart';
 
 void main() {
   runApp(MyApp());
