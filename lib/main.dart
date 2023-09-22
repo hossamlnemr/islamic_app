@@ -1,16 +1,15 @@
-// ignore_for_file: unused_import, duplicate_import, depend_on_referenced_packages, use_key_in_widget_constructors, prefer_const_constructors
 
-// ignore: avoid_web_libraries_in_flutter
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:islamic_app/pages/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,9 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-            titleMedium: TextStyle(fontFamily: 'Quicksand', fontSize: 15.0)),
+            titleMedium: const TextStyle(fontFamily: 'Quicksand', fontSize: 15.0)),
       ),
-      home: home_page(),
+      home: const home_page(),
     );
   }
 }
